@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Evita el incremento del tamaño resultado de padding */
+}
+
+body{
+    background-color: hsl(214, 39%, 7%);
+    color: hsl(74, 51, 80);
+    font-family: Figtree, sans-serif;
+}
+
+a{
+    text-decoration: none; /* quitar subrayado */
+}
+
+header{
+    width: 1100px;
+    height: 96px;
+    margin: auto;
+    background-color: hsl(75, 30%, 40%);
+
+    /* Distribución del contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    header img{
+        margin-left: 16px;
+    }
+
+    header nav a{
+        margin: 8px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+main{
+    width: 1100px;
+    min-height: 700px;
+    margin: auto;
+    color: #fff;
+}
+
+/* hero banner */
+#hero{
+    height: 456px;
+    margin-top: 56px;
+    background-image: url(../imgs/hero-image.jpg);
+
+    display: flex;
+    align-items: center;
+}
+    #hero h1{
+        margin-left: 96px;
+        padding: 8px 16px;
+        background-color: hsla(0, 0%, 12%, .4);
+        font-size: 40px;
+        font-weight: 400;
+        color: hsl(0, 0%, 100%);  
+    }
+
+/* sección servicios */
+#servicios{
+    height: 408px;
+    margin-top: 56px;
+    padding: 32px 40px;
+    background-color: hsl(215, 37%, 10%);
+    display: flex;
+    justify-content: space-between;
+}
+
+    #servicios article{
+        width: 296px;
+        background-color: hsl(213, 38%, 14%);
+        color: #fff;
+    }
+        #servicios article h2{
+            margin: 8px 16px;
+            font-weight: 400;
+        }
+        #servicios article p{
+            margin: 0px 16px 16px 16px;
+        }
+
+/* página destinos */
+#destinos{
+    margin-top: 56px;
+}
+    #destinos article{
+        display: flex;
+        column-gap: 44px;
+        margin-bottom: 40px;
+        transition: .5s;
+    }
+    #destinos article:hover{
+        background-color: hsl(214, 39%, 10%);
+    }
+        #destinos article div h2 {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            font-weight: 400;
+        } 
+        #destinos article div p{
+            margin-top: 16px;
+        }
+        #destinos article div a{
+            width: 158px;
+            margin-top: 24px;
+            padding: 8px;
+            border-radius: 8px;
+            display: block;
+            text-align: center;
+            background-color: hsl(215, 39%, 30%);
+            color: #fff;
+            font-size: 20px;
+            transition: 500ms;
+        }
+        #destinos article div a:hover{
+            background-color: hsl(215, 39%, 44%);
+        }
+
+footer{
+    width: 1100px; 
+    height: 136px;
+    margin: 56px auto 0px auto;
+    background-color: hsl(210, 19%, 11%);
+}
